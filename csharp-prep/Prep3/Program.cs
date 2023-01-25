@@ -27,7 +27,7 @@ class Program
 
             else
             {
-                Console.Write($"Congraluations you guess {numb} right");
+                Console.Write($"Congraluations you guessed {numb} right");
             }
             }
 
