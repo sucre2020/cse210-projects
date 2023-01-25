@@ -4,30 +4,38 @@ class Program
 {
     static void Main(string[] args)
     {
-        int numb = 109;
-        int g = 110; 
-        
-            Console.Write($"Welcome\nEnter a magic number between 1 - {g}: ");
-            int n = int.Parse(Console.ReadLine());
+        Random rnd = new Random();
 
-            while (n != numb)
-            {
-            Console.Write($"Enter a number between 1 - {g}: ");
-            n = int.Parse(Console.ReadLine());
+        int magicNumber = rnd.Next(1, 101);
+
+        int g = -1;
+        
+        //int numb = 109;
+        //int g = 110; 
+        
+            //Console.Write($"Welcome\nEnter a magic number between 1 - {g}: ");
+            //int n = int.Parse(Console.ReadLine());
+
+        while (g != magicNumber)
+            //while (n != numb)
+        {   
+            //Console.WriteLine(magicNumber);
+            Console.Write("Guess a number ");
+            g = int.Parse(Console.ReadLine());
             
-            if (n > numb)
+            if (magicNumber < g)
             {
                 Console.WriteLine("Lower");
             }
 
-            else if (n < numb)
+            else if (magicNumber > g)
             {
                 Console.WriteLine("Higher");
             }
 
             else
             {
-                Console.Write($"Congraluations you guessed {numb} right");
+                Console.Write($"Congraluations you guessed {magicNumber} right");
             }
             }
 
