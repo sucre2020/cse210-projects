@@ -20,7 +20,7 @@ class Program
             //while (n != numb)
         {   
             //Console.WriteLine(magicNumber);
-            Console.Write("Guess a number ");
+            Console.Write("Guess a number: ");
             g = int.Parse(Console.ReadLine());
             
             if (magicNumber < g)
@@ -35,7 +35,7 @@ class Program
 
             else
             {
-                Console.Write($"Congraluations you guessed {magicNumber} right");
+                Console.Write($"Congraluations you guessed right. The magic Number is: {magicNumber} ");
             }
             }
 
