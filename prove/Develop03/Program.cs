@@ -69,7 +69,7 @@ using System;
         }
 
         public bool HideNextWord() {
-            int numWordsHidden = 1;
+            int numWordsHidden = 0;
             foreach (string verse in verses) {
                 string[] words = verse.Split(' ');
                 int wordIndex = new Random().Next(words.Length);
