@@ -4,18 +4,38 @@ class Program
 {
     static void Main(string[] args)
     {
-        Activity breathingActivity = new BreathingActivity();
-        breathingActivity.Run();
+        Console.WriteLine("Welcome! Select a choice from the menu.");
+        Console.WriteLine("Menu Options:");
+        Console.WriteLine("1 Start Breathing activity.");
+        Console.WriteLine("2 Start Reflecting activity.");
+        Console.WriteLine("3 Start Listing activity.");
 
-        Activity reflectionActivity = new ReflectionActivity();
-        reflectionActivity.Run();
+            int choice = int.Parse(Console.ReadLine());
 
-        Activity listingActivity = new ListingActivity("Listing Activity", "This activity will help you list things that you appreciate or are grateful for.");
-        listingActivity.Run();
-
-        Console.WriteLine("All activities completed. Press any key to exit.");
-        Console.ReadKey();
+    switch (choice)
+    {
+        case 1:
+            Activity breathingActivity = new BreathingActivity();
+            breathingActivity.Run();
+            break;
+        case 2:
+            Activity reflectionActivity = new ReflectionActivity();
+            reflectionActivity.Run();
+            break;
+        case 3:
+            Activity listingActivity = new ListingActivity("Listing Activity", "This activity will help you list things that you appreciate or are grateful for.");
+            listingActivity.Run();
+            break;
+        default:
+            Console.WriteLine("Invalid choice.");
+            break;
     }
+
+    Console.WriteLine("All activities completed. Press any key to exit.");
+    Console.ReadKey();
+}
+
+    
 }
 
 // Base activity class
@@ -131,7 +151,6 @@ class ReflectionActivity : Activity
     }
 }
 
-// Listing activity class
 // Listing activity class
 class ListingActivity : Activity
 {
