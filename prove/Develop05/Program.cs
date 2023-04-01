@@ -236,7 +236,7 @@ private static void SaveGoals()
                 type = "Checklist";
             }
 
-            writer.WriteLine($"{type},{goal.Name},{goal.Value},{goal.GetSaveString()},{goal.Score}");
+            //writer.WriteLine($"{type},{goal.Name},{goal.Value},{goal.GetSaveString()},{goal.Score}");
         }
     }
 }
