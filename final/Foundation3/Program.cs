@@ -84,7 +84,7 @@ public class PictureGathering : Event {
 
 public class Program {
     public static void Main() {
-        Console.Write("Enter the street address: ");
+        Console.Write("Welcome to the Event Planner!\n Enter the event street address: ");
         string street = Console.ReadLine();
 
         Console.Write("Enter the city: ");
