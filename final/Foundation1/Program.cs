@@ -23,7 +23,7 @@ class Program
         List<Video> videoList = new List<Video>();
         videoList.Add(video1);
         videoList.Add(video2);
-        videoList.Add(video3);
+        //videoList.Add(video3);
 
         // Display information about each video and its comments
         foreach (Video video in videoList)
